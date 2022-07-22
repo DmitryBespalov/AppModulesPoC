@@ -53,6 +53,7 @@
 		0A4ADE6B288AE42B0035AFCC /* MoudlarAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoudlarAppUITests.swift; sourceTree = "<group>"; };
 		0A4ADE6D288AE42B0035AFCC /* MoudlarAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoudlarAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0A4ADE7A288AE5DD0035AFCC /* Passcode */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Passcode; path = Packages/Passcode; sourceTree = "<group>"; };
+		0A4ADE7E288AF1680035AFCC /* CommonUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CommonUI; path = Packages/CommonUI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 		0A4ADE3B288AE42A0035AFCC = {
 			isa = PBXGroup;
 			children = (
+				0A4ADE7E288AF1680035AFCC /* CommonUI */,
 				0A4ADE7A288AE5DD0035AFCC /* Passcode */,
 				0A4ADE46288AE42A0035AFCC /* MoudlarApp */,
 				0A4ADE60288AE42B0035AFCC /* MoudlarAppTests */,
