@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Passcode
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func openPasscode(_ sender: Any) {
+        let passcodeVC = PasscodeViewController()
+        passcodeVC.completion = { [unowned self] in
+            dismiss(animated: true)
+        }
+        present(passcodeVC, animated: true)
+    }
 
 }
-

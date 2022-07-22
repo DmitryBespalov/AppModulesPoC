@@ -17,6 +17,7 @@
 		0A4ADE62288AE42B0035AFCC /* MoudlarAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4ADE61288AE42B0035AFCC /* MoudlarAppTests.swift */; };
 		0A4ADE6C288AE42B0035AFCC /* MoudlarAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4ADE6B288AE42B0035AFCC /* MoudlarAppUITests.swift */; };
 		0A4ADE6E288AE42B0035AFCC /* MoudlarAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4ADE6D288AE42B0035AFCC /* MoudlarAppUITestsLaunchTests.swift */; };
+		0A4ADE7D288AE64D0035AFCC /* Passcode in Frameworks */ = {isa = PBXBuildFile; productRef = 0A4ADE7C288AE64D0035AFCC /* Passcode */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0A4ADE67288AE42B0035AFCC /* MoudlarAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoudlarAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4ADE6B288AE42B0035AFCC /* MoudlarAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoudlarAppUITests.swift; sourceTree = "<group>"; };
 		0A4ADE6D288AE42B0035AFCC /* MoudlarAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoudlarAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0A4ADE7A288AE5DD0035AFCC /* Passcode */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Passcode; path = Packages/Passcode; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4ADE7D288AE64D0035AFCC /* Passcode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +84,12 @@
 		0A4ADE3B288AE42A0035AFCC = {
 			isa = PBXGroup;
 			children = (
+				0A4ADE7A288AE5DD0035AFCC /* Passcode */,
 				0A4ADE46288AE42A0035AFCC /* MoudlarApp */,
 				0A4ADE60288AE42B0035AFCC /* MoudlarAppTests */,
 				0A4ADE6A288AE42B0035AFCC /* MoudlarAppUITests */,
 				0A4ADE45288AE42A0035AFCC /* Products */,
+				0A4ADE7B288AE64D0035AFCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +135,13 @@
 			path = MoudlarAppUITests;
 			sourceTree = "<group>";
 		};
+		0A4ADE7B288AE64D0035AFCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +158,9 @@
 			dependencies = (
 			);
 			name = MoudlarApp;
+			packageProductDependencies = (
+				0A4ADE7C288AE64D0035AFCC /* Passcode */,
+			);
 			productName = MoudlarApp;
 			productReference = 0A4ADE44288AE42A0035AFCC /* MoudlarApp.app */;
 			productType = "com.apple.product-type.application";
@@ -606,6 +621,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A4ADE7C288AE64D0035AFCC /* Passcode */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Passcode;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		0A4ADE50288AE42A0035AFCC /* MoudlarApp.xcdatamodeld */ = {
