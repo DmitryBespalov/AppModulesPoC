@@ -7,12 +7,14 @@
 
 import UIKit
 import Passcode
+import CommonUI
 
 class ViewController: UIViewController {
+    @IBOutlet weak var moduleImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        moduleImageView.image = UIImage(named: "OvalRandomIcon", in: .commonUI, compatibleWith: nil)
     }
 
     @IBAction func openPasscode(_ sender: Any) {

@@ -28,14 +28,33 @@
                                     <action selector="openPasscode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uhv-DT-2Ga"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcH-Uq-WtV" customClass="CustomView" customModule="CommonUI">
+                                <rect key="frame" x="87" y="490" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7eF-nE-OhK"/>
+                                    <constraint firstAttribute="width" constant="240" id="Ll4-Tv-BqG"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nDX-RM-Vbg">
+                                <rect key="frame" x="87" y="653" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="wcH-Uq-WtV" firstAttribute="top" secondItem="ra1-ET-wdf" secondAttribute="bottom" constant="20" id="EPf-qI-Dhx"/>
                             <constraint firstItem="ra1-ET-wdf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PB6-fw-tBa"/>
                             <constraint firstItem="ra1-ET-wdf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YEW-8g-Anr"/>
+                            <constraint firstItem="nDX-RM-Vbg" firstAttribute="top" secondItem="wcH-Uq-WtV" secondAttribute="bottom" constant="35" id="YZG-XP-40y"/>
+                            <constraint firstItem="wcH-Uq-WtV" firstAttribute="centerX" secondItem="ra1-ET-wdf" secondAttribute="centerX" id="ZwC-g7-ITt"/>
+                            <constraint firstItem="nDX-RM-Vbg" firstAttribute="centerX" secondItem="wcH-Uq-WtV" secondAttribute="centerX" id="aBL-eB-dqs"/>
+                            <constraint firstItem="nDX-RM-Vbg" firstAttribute="width" secondItem="wcH-Uq-WtV" secondAttribute="width" id="shc-o5-0UO"/>
+                            <constraint firstItem="nDX-RM-Vbg" firstAttribute="height" secondItem="wcH-Uq-WtV" secondAttribute="height" id="w83-Uv-hiH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="moduleImageView" destination="nDX-RM-Vbg" id="gdG-LJ-GVa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
