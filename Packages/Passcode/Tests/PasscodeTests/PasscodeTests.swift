@@ -1,11 +1,12 @@
 import XCTest
+import SnapshotTesting
 @testable import Passcode
 
 final class PasscodeTests: XCTestCase {
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(Passcode().text, "Hello, World!")
+        isRecording = false
+        let vc = PasscodeViewController()
+        assertSnapshot(matching: vc, as: .image, named: "Empty", testName: "Passcode")
+            // results in file "Passcode.Empty.png"
     }
 }
