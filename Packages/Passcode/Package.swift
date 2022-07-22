@@ -28,7 +28,8 @@ let package = Package(
             dependencies: [
                 "Passcode",
                 .product(name: "SnapshotTesting", package: "swift-snapshot-testing")
-            ]),
+            ],
+        exclude: ["__Snapshots__"]),
     ]
 )
 
