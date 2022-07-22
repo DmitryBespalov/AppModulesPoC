@@ -17,4 +17,4 @@ Goal is to build a technical prototype for modularizing the app code with swift 
 - Modules can have their own Core Data models. Core data model needs to be loaded from a `Bundle.module`. 
   - One drawback is that the core data model can't autogenerate classes in the package.
     - To workaround, place the model in a Xcode project, generate classes in Xcode, then manually drag the generated files and the model to the package.
-
+    - Make sure to create a model in the Xcode project first, otherwise it is not initialized properly when created right inside a package. 
